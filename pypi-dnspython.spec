@@ -6,7 +6,7 @@
 #
 Name     : pypi-dnspython
 Version  : 2.1.0
-Release  : 69
+Release  : 70
 URL      : https://files.pythonhosted.org/packages/13/27/5277de856f605f3429d752a39af3588e29d10181a3aa2e2ee471d817485a/dnspython-2.1.0.zip
 Source0  : https://files.pythonhosted.org/packages/13/27/5277de856f605f3429d752a39af3588e29d10181a3aa2e2ee471d817485a/dnspython-2.1.0.zip
 Source1  : https://files.pythonhosted.org/packages/13/27/5277de856f605f3429d752a39af3588e29d10181a3aa2e2ee471d817485a/dnspython-2.1.0.zip.asc
@@ -17,11 +17,8 @@ Requires: pypi-dnspython-license = %{version}-%{release}
 Requires: pypi-dnspython-python = %{version}-%{release}
 Requires: pypi-dnspython-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: dnspython
-Provides: dnspython-python
-Provides: dnspython-python3
 BuildRequires : pypi(poetry)
-BuildRequires : pytest
+BuildRequires : pypi-pytest
 Patch1: 0001-Disable-broken-test.patch
 
 %description
@@ -70,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641433575
+export SOURCE_DATE_EPOCH=1650557820
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
