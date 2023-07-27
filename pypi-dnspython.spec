@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-dnspython
-Version  : 2.4.0
-Release  : 84
-URL      : https://files.pythonhosted.org/packages/bd/5f/45f60fd7b03a1bef883a0eb4f9b6465628c1977393be45802eef1962571d/dnspython-2.4.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/bd/5f/45f60fd7b03a1bef883a0eb4f9b6465628c1977393be45802eef1962571d/dnspython-2.4.0.tar.gz
+Version  : 2.4.1
+Release  : 85
+URL      : https://files.pythonhosted.org/packages/78/ad/db7b362200e11378d1d286a4452c7050dab47b0e6d99afa51364ad95a9f9/dnspython-2.4.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/78/ad/db7b362200e11378d1d286a4452c7050dab47b0e6d99afa51364ad95a9f9/dnspython-2.4.1.tar.gz
 Summary  : DNS toolkit
 Group    : Development/Tools
 License  : ISC
@@ -51,18 +51,16 @@ Summary: python3 components for the pypi-dnspython package.
 Group: Default
 Requires: python3-core
 Provides: pypi(dnspython)
-Requires: pypi(httpcore)
-Requires: pypi(sniffio)
 
 %description python3
 python3 components for the pypi-dnspython package.
 
 
 %prep
-%setup -q -n dnspython-2.4.0
-cd %{_builddir}/dnspython-2.4.0
+%setup -q -n dnspython-2.4.1
+cd %{_builddir}/dnspython-2.4.1
 pushd ..
-cp -a dnspython-2.4.0 buildavx2
+cp -a dnspython-2.4.1 buildavx2
 popd
 
 %build
@@ -70,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1689611675
+export SOURCE_DATE_EPOCH=1690470823
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
