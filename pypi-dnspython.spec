@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-dnspython
-Version  : 2.4.1
-Release  : 85
-URL      : https://files.pythonhosted.org/packages/78/ad/db7b362200e11378d1d286a4452c7050dab47b0e6d99afa51364ad95a9f9/dnspython-2.4.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/78/ad/db7b362200e11378d1d286a4452c7050dab47b0e6d99afa51364ad95a9f9/dnspython-2.4.1.tar.gz
+Version  : 2.4.2
+Release  : 86
+URL      : https://files.pythonhosted.org/packages/65/2d/372a20e52a87b2ba0160997575809806111a72e18aa92738daccceb8d2b9/dnspython-2.4.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/65/2d/372a20e52a87b2ba0160997575809806111a72e18aa92738daccceb8d2b9/dnspython-2.4.2.tar.gz
 Summary  : DNS toolkit
 Group    : Development/Tools
 License  : ISC
@@ -57,10 +57,10 @@ python3 components for the pypi-dnspython package.
 
 
 %prep
-%setup -q -n dnspython-2.4.1
-cd %{_builddir}/dnspython-2.4.1
+%setup -q -n dnspython-2.4.2
+cd %{_builddir}/dnspython-2.4.2
 pushd ..
-cp -a dnspython-2.4.1 buildavx2
+cp -a dnspython-2.4.2 buildavx2
 popd
 
 %build
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1690470823
+export SOURCE_DATE_EPOCH=1691677770
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
