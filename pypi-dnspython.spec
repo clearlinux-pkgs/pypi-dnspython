@@ -5,7 +5,7 @@
 #
 Name     : pypi-dnspython
 Version  : 2.4.2
-Release  : 88
+Release  : 89
 URL      : https://files.pythonhosted.org/packages/65/2d/372a20e52a87b2ba0160997575809806111a72e18aa92738daccceb8d2b9/dnspython-2.4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/65/2d/372a20e52a87b2ba0160997575809806111a72e18aa92738daccceb8d2b9/dnspython-2.4.2.tar.gz
 Summary  : DNS toolkit
