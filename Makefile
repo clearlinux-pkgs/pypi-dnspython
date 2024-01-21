@@ -1,5 +1,5 @@
 PKG_NAME := pypi-dnspython
-URL = https://files.pythonhosted.org/packages/65/2d/372a20e52a87b2ba0160997575809806111a72e18aa92738daccceb8d2b9/dnspython-2.4.2.tar.gz
+URL = https://files.pythonhosted.org/packages/65/51/fbffab4071afa789e515421e5749146beff65b3d371ff30d861e85587306/dnspython-2.5.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
