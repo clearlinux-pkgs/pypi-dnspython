@@ -6,10 +6,10 @@
 # autospec commit: da8b975
 #
 Name     : pypi-dnspython
-Version  : 2.6.0
-Release  : 91
-URL      : https://files.pythonhosted.org/packages/77/4e/7ed5533779c9544b34643bf02b04c17015e6b9c2387d091b261d83283249/dnspython-2.6.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/77/4e/7ed5533779c9544b34643bf02b04c17015e6b9c2387d091b261d83283249/dnspython-2.6.0.tar.gz
+Version  : 2.6.1
+Release  : 92
+URL      : https://files.pythonhosted.org/packages/37/7d/c871f55054e403fdfd6b8f65fd6d1c4e147ed100d3e9f9ba1fe695403939/dnspython-2.6.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/37/7d/c871f55054e403fdfd6b8f65fd6d1c4e147ed100d3e9f9ba1fe695403939/dnspython-2.6.1.tar.gz
 Summary  : DNS toolkit
 Group    : Development/Tools
 License  : ISC
@@ -59,10 +59,10 @@ python3 components for the pypi-dnspython package.
 
 
 %prep
-%setup -q -n dnspython-2.6.0
-cd %{_builddir}/dnspython-2.6.0
+%setup -q -n dnspython-2.6.1
+cd %{_builddir}/dnspython-2.6.1
 pushd ..
-cp -a dnspython-2.6.0 buildavx2
+cp -a dnspython-2.6.1 buildavx2
 popd
 
 %build
@@ -70,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1708274341
+export SOURCE_DATE_EPOCH=1708363229
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
